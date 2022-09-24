@@ -64,14 +64,14 @@ body {
 		&::before {
 			top: 27px;
 			width: 30%;
-            transition-delay: .1s;
+			transition-delay: 0.1s;
 		}
 	}
 }
 
 // Header
 
-.header{
+.header {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -84,18 +84,17 @@ body {
 	@include heroImages('../img/header-mini.jpg');
 	background-attachment: scroll;
 
-	&__heading{
+	&__heading {
 		font-family: 'Dancing Script', cursive;
 		font-size: 4.8rem;
 		font-weight: 300;
 	}
 
-	&__text{
+	&__text {
 		font-size: 1.4rem;
-
 	}
 
-	&__btn{
+	&__btn {
 		background: $pure-white;
 		margin-top: 2em;
 		padding: 0.8em 1.6em;
@@ -107,8 +106,44 @@ body {
 		text-transform: uppercase;
 		cursor: pointer;
 
-		&::before{
+		&::before {
 			background-color: $light-white;
 		}
 	}
+}
+
+// Media
+
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+	.header {
+		&__heading {
+			font-size: 6.6rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+	.header{
+		background-image: $blue-gradient, url('../img/header-big.jpg');
+
+		&__heading{
+			font-size: 10rem;
+		}
+}
 }
