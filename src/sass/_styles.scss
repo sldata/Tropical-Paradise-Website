@@ -181,6 +181,8 @@ body {
 	}
 }
 
+// hero section
+
 .hero-img {
 	position: relative;
 	padding: 10em 2em;
@@ -197,6 +199,61 @@ body {
 
 	&__text {
 		padding: 1em 0;
+	}
+}
+
+// Islands section
+
+.islands {
+	&__card {
+		position: relative;
+		margin: 1em 0;
+		height: 450px;
+		color: $pure-white;
+		text-align: center;
+		perspective: 1000px;
+
+		h3 {
+			font-family: 'Dancing Script', cursive;
+			font-size: 2.8rem;
+		}
+		&:hover {
+			.islands__card-img {
+				transform: rotateY(-180deg);
+				opacity: 0;
+			}
+			.islands__card-info {
+				transform: rotateY(0);
+				opacity: 1;
+			}
+		}
+
+		&-img {
+			padding: 2em;
+			height: 100%;
+			border-radius: 8px;
+			background-size: cover;
+			transition: transform 1s, opacity 1s;
+			&--first {
+				background-image: $light-blue-gradient, url('../img/water.jpg');
+			}
+			&--second {
+				background-image: $blue-gradient, url('../img/boat.jpg');
+			}
+			&--third {
+				background-image: $purple-gradient, url('../img/hawaii.jpg');
+			}
+			&-info {
+				position: absolute;
+				bottom: 30px;
+				right: 30px;
+				font-size: 1.8rem;
+
+				i{
+					margin-right: 0.3em;
+				}
+			}
+		}
 	}
 }
 
@@ -305,7 +362,7 @@ body {
 		&__title {
 			font-size: 7.2rem;
 		}
-		hr{
+		hr {
 			width: 60%;
 			max-width: 900px;
 		}
