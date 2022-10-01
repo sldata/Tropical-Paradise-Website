@@ -153,7 +153,6 @@ body {
 		text-decoration: none;
 		text-transform: uppercase;
 		cursor: pointer;
-
 		&::before {
 			background-color: $light-white;
 		}
@@ -190,13 +189,11 @@ body {
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
-
 	&__title {
 		font-family: 'Dancing Script', cursive;
 		margin-bottom: 0.5em;
 		font-size: 4.8rem;
 	}
-
 	&__text {
 		padding: 1em 0;
 	}
@@ -227,7 +224,6 @@ body {
 				opacity: 1;
 			}
 		}
-
 		&-img {
 			padding: 2em;
 			height: 100%;
@@ -354,6 +350,12 @@ body {
 			}
 		}
 	}
+}
+
+// Reviews 
+
+.reviews{
+	
 }
 
 // Media
@@ -492,7 +494,6 @@ body {
 			font-size: 2.2rem;
 		}
 	}
-
 	.offers{
 		background-image: $blue-gradient, url('../img/maldives-big.jpg');
 		&__option{
@@ -507,7 +508,6 @@ body {
 			}
 		}
 	}
-
 	.hero-img {
 		padding: 40rem 2em;
 		background-image: $blue-gradient, url('../img/bora-bora-big.jpg');
@@ -521,7 +521,6 @@ body {
 		}
 	}
 }
-
 @media (min-width: 1100px) {
 	.islands {
 		&__card {
