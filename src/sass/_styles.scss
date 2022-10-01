@@ -352,10 +352,49 @@ body {
 	}
 }
 
-// Reviews 
+// Reviews
 
-.reviews{
-	
+@media (max-width: 767px) {
+	.reviews.section-padding {
+		padding: 6em 0;
+	}
+}
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		border-radius: 8px;
+		box-shadow: 3px 3px 10px #2e2e2e2e;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+
+	&__box-img {
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&__box-quote {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: $main-color;
+	}
+	&__box-text {
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+		color: $dark;
+	}
 }
 
 // Media
@@ -398,16 +437,16 @@ body {
 					order: 1;
 				}
 			}
-			&-info{
+			&-info {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 			}
-			&-heading{
+			&-heading {
 				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
-			&-btn{
+			&-btn {
 				padding: 1em;
 			}
 		}
@@ -494,16 +533,15 @@ body {
 			font-size: 2.2rem;
 		}
 	}
-	.offers{
+	.offers {
 		background-image: $blue-gradient, url('../img/maldives-big.jpg');
-		&__option{
-			&-img{
-
+		&__option {
+			&-img {
 				object-fit: cover;
 				height: 300px;
 			}
 
-			&-text{
+			&-text {
 				font-size: 1.5rem;
 			}
 		}
